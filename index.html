@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>IE Bugs No.1</title>
+  <style>
+html,body {
+	margin : 0;
+}
+.tile {
+	position : fixed;
+	width : 100px;
+	height : 100px;
+	background-color : black;
+	color : white;
+	font-size: 20px;
+}
+
+.test1 {
+	top : 100px;
+	left : 100px;
+	transform : scale(1.5);
+}
+.test2 {
+	top : 100px;
+	left : 250px;
+	transform : scale(1.0);
+}
+.test3 {
+	top : 100px;
+	left : 400px;
+	transform : scale(0.5);
+}
+.test4 {
+	top : 300px;
+	left : 100px;
+	transform : rotate(0deg);
+}
+.test5 {
+	top : 300px;
+	left : 250px;
+	transform : rotate(10deg);
+}
+.test6 {
+	top : 300px;
+	left : 400px;
+	transform : rotate(20deg);
+}
+.position_relative {
+	position : relative;
+}
+.position_absolute {
+	position : absolute;
+}
+.position_fixed {
+	position : fixed;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="tile test1">
+	<p class="position_relative">test 1</p>
+</div>
+<div class="tile test2">
+	<p class="position_absolute">test 2</p>
+</div>
+<div class="tile test3">
+	<p class="position_fixed">test 3</p>
+</div>
+<div class="tile test4">
+	<p class="position_relative">test 4</p>
+</div>
+<div class="tile test5">
+	<p class="position_absolute">test 5</p>
+</div>
+<div class="tile test6">
+	<p class="position_fixed">test 6</p>
+</div>
+
+</body>
+</html>
